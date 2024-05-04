@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+   }
+/* navbar */
+.header{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 150px;
+    background:transparent ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color:white;
+}
+.logo img{
+    width: 80px;
+}
+.navbar a{
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a:hover{
+    color: rgba(0, 0, 0, 0.452);
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+/* navbar */
+
+/* asosiy sahifa */
+.bosh_sahifa{
+    margin-top: 200px;
+    margin-left: 100px;
+    display: flex;
+}
+.bosh_sahifa img{
+    margin-left: 400px;
+}
+.bosh_sahifa_sozi{
+    margin-left: 190px;
+    text-align: center;
+    margin-top: 310px;
+    font-size: 40px;
+}
+.bosh_sahifa_sozi{
+    color:grey;
+}
+.bosh_sahifa_button{
+    width: 120px;
+    height: 40px;
+    color:black;
+    font-size: 14px;
+    background-color: white;
+}
+.bosh_sahifa_button:hover{
+    background-color: black;
+    color: white; 
+}
+/* asosiy sahifa */
+
+/* about */
+.about{
+    margin: 100px;
+    display: flex;
+}
+.about_rasm12{
+    margin-left: 300px;
+    
+}
+.about_rasm3{
+    margin-left: 35px;
+    margin-top: 50px;
+    
+}
+.About{
+    height: 100px;
+    font-size: 90px;
+    color: grey;
+    margin-left: 100px;
+
+
+}
+.about_1{
+    display: flex;
+}
+.about_gap{
+    width: 500px;
+    height: 200px;
+    margin-top: 150px;
+    margin-left: -240px;
+    padding: 10px;
+    color: gray;
+}
+.about_button{
+    margin-top: 50px;
+    width: 120px;
+    height: 40px;
+    color:black;
+    font-size: 14px;
+    background-color: white;
+}
+.about_button:hover{
+    background-color: black;
+    color: white; 
+}
+/* about */
+
+/* Main */
+.Main{
+    width: 100%;
+    height: 400px;
+}
+.Main-in{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.Main h1{
+    text-align: center;
+    font-size: 70px;
+    color: grey;
+}
+.Main-1{
+    display: flex;
+    width: 500px;
+}
+.Main-1 h1{
+    font-size: 170px;
+    color: rgba(128, 128, 128, 0.351);
+}
+.Main-1 p{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 28px;
+}
+/* Main */
+
+/* Our-Projects */
+.Our-Projects{
+    width: 100%;
+    height: 800px;
+    margin-top: 100px;
+    justify-content: center;
+}
+.Our-Projects h1{
+    margin-left: 270px;
+    font-size: 65px;
+    color: grey;
+}
+.Our-Projects-img{
+    
+    margin-left: 200px;
+    
+}
+.Our-Projects-img img{
+    width: 450px;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.Our-Projects-img img:hover{
+    transform: scale(105%); /* Rasmni 105% marta kattalash */
+    transition: transform 0.5s ease; /* Animatsiya vaqtini sozlash */
+}
+.Our-Projects button{
+    margin-top: 50px;
+    width: 120px;
+    height: 40px;
+    color:black;
+    font-size: 14px;
+    background-color: white;
+    margin-left: 230px;
+    transition: all 0.3s;
+}
+.Our-Projects button:hover{
+    background-color: black;
+    color: white; 
+}
+/* Our-Projects */
+
+/* Contact Us */
+.Contact{
+    height:800px;
+    width: 100%;
+    margin-top: 150px;
+
+}
+.Contact h1{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 65px;
+    color: grey;
+}
+.Contact-Us{
+    margin-top: 50px;
+    margin-left:20% ;
+    width: 60%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+.Contact-img img{
+    margin-left: 100px;
+    margin-top: 8%;
+}
+.Contact-Us form{
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+textarea{
+    resize: none;
+    font-size: 20px;
+    height: 100px;
+}
+.form-btn {
+    margin-left: 25%;
+    display: block;
+    margin-top: 50px;
+    padding: px;
+    width: 120px;
+    height: 40px;
+    color:black;
+    font-size: 14px;
+    background-color: white;
+    margin-left: 200px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.form-btn:hover {
+    background-color: black;
+    color: white; 
+}
+.Contact-img{
+    float: right;
+    margin-top: 0;
+    width: 600px;
+}
+.Contact-img img{
+    margin: 0;
+    padding: 0;
+    margin-top: 25%;
+    width: 600px;
+    height: auto;
+}
+    
+/* Contact Us */
+
+/* asos */
+.box{
+    background-color: rgba(128, 128, 128, 0.094);
+    height: 400px;
+}
+.box1{
+    width: 350px;
+    margin-top: 50px;
+
+}
+.boxin{
+    margin-top: 35px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-pasti{
+    box-shadow: 0 0 1cm rgba(0, 0, 0, 0.141);
+    background-color: white;
+    width: 60%;
+    text-align: center;
+    margin-left:20%;
+    border-radius: 15px 15px 0 0;
+    height: 100px;
+}
+.box-pasti p{
+    margin-top: 10px;
+}
+.box-pasti-icon{
+    
+    margin-top: 30px;
+    font-size: 20px;
+}
+.box-pasti-icon i{
+   margin-left: 10px; 
+   margin-right: 10px;
+   color: black;
+}
+.box1 p{
+    margin-top: 10px;
+}
+/* asos */

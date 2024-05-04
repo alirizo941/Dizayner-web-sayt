@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/Gallery.css' %}">
+{% block style %}
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+   }
+/* navbar */
+.header{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 150px;
+    background:transparent ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color:rgba(128, 128, 128, 0.262);
+}
+.logo img{
+    width: 80px;
+}
+.navbar a{
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a:hover{
+    color: rgba(0, 0, 0, 0.452);
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+/* navbar */
+
+/* GALLERY */
+.GALLERY{
+    margin-top: 150px;
+    width: 100%;
+    
+}
+.GALLERY-IN{
+    margin: 10px 250px 0px 250px;
+}
+.GALLERY-IN h1{
+    font-size: 50px;
+    color: #222;
+}
+.GALLERY-img{
+    margin-left: 170px;
+    margin-top: 80px;
+}
+.GALLERY-img img{
+    width: 280px;
+    height: 400px;
+    object-fit: cover;
+    justify-content: space-evenly;
+    margin: 15px;
+    transition: transform 0.4s;
+}
+
+.GALLERY-img img:hover{
+    transform: scale(105%);
+}
+
+.GALLERY button{
+
+    margin: 50px 0px 50px 185px;
+    width: 120px;
+    height: 40px;
+    color:black;
+    font-size: 14px;
+    background-color: white;
+}
+.GALLERY button:hover{
+    background-color: rgba(0, 0, 0, 0.841);
+    color: white; 
+}
+/* GALLERY */
+
+/* asos */
+.box{
+    background-color: rgba(128, 128, 128, 0.094);
+    height: 400px;
+}
+.box1{
+    width: 350px;
+    margin-top: 50px;
+
+}
+.boxin{
+    margin-top: 35px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-pasti{
+    box-shadow: 0 0 1cm rgba(0, 0, 0, 0.141);
+    background-color: white;
+    width: 60%;
+    text-align: center;
+    margin-left:20%;
+    border-radius: 15px 15px 0 0;
+    height: 100px;
+}
+.box-pasti p{
+    margin-top: 10px;
+}
+.box-pasti-icon{
+    
+    margin-top: 30px;
+    font-size: 20px;
+}
+.box-pasti-icon i{
+   margin-left: 10px; 
+   margin-right: 10px;
+   color: black;
+}
+.box1 p{
+    margin-top: 10px;
+}
+/* asos */
+</style>
+{% endblock %}
+
+{% block content %}
+     <!-- GALLERY -->
+    <div class="GALLERY">
+        <div class="GALLERY-IN">
+            <h1 class="Photo">Photo</h1>
+        <br>
+        <h1 class="Gallery">Gallery</h1>
+        </div>
+        <div class="GALLERY-img">
+            <img src="{% static 'images/home-img/home1.jpg' %}" alt="">
+            <img src="{% static 'images/home-img/home2.jpg' %}" alt="">
+            <img src="{% static 'images/home-img/home3.jpg' %}" alt="">
+            <img src="{% static 'images/home-img/home4.jpg' %}" alt="">
+            <img src="{% static 'images/home-img/home5.jpg' %}" alt="">
+            <img src="{% static 'images/home-img/home6.jpg' %}" alt="">
+            <img src="{% static 'images/home-img/home7.jpg' %}" alt="">
+            <img src="{% static 'images/home-img/home8.jpg' %}" alt="">
+            <img src="{% static 'images/home-img/home9.jpg' %}" alt="">
+            <img src="{% static 'images/home-img/home10.jpg' %}" alt="">
+        </div>
+        <a href="#"><button>View More</button></a>
+    </div>
+     <!-- GALLERY -->
+
+    {% endblock %}

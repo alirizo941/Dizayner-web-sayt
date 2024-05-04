@@ -1,0 +1,314 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+   }
+/* navbar */
+.header{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 150px;
+    background:transparent ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color:white;
+}
+.logo img{
+    width: 80px;
+}
+.navbar a{
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a:hover{
+    color: rgba(0, 0, 0, 0.452);
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+/* navbar */
+
+html,
+body {
+     margin-top: 150px;
+  position: relative;
+  margin-left: 250px;
+  margin-right: 250px;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.swiper {
+  width: 100%;
+  height: 500px;
+  background: #000;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .title {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.swiper-slide .subtitle {
+  font-size: 21px;
+}
+
+.swiper-slide .text {
+  font-size: 20px;
+  max-width: 600px;
+  line-height: 1.3;
+}
+
+img{
+    width: 500px;
+}
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width: 520px;
+}
+.about-text{
+width: 550px;
+}
+.main{
+    width: 1130px;
+    height: 800px;
+    max-width: 110%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+span{
+    color: #f9004d;
+}
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background: white;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* asos */
+.box{
+    background-color: rgba(128, 128, 128, 0.094);
+    height: 400px;
+}
+.box1{
+    width: 350px;
+    margin-top: 50px;
+
+}
+.boxin{
+    margin-top: 35px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-pasti{
+    box-shadow: 0 0 1cm rgba(0, 0, 0, 0.141);
+    background-color: white;
+    width: 60%;
+    text-align: center;
+    margin-left:20%;
+    border-radius: 15px 15px 0 0;
+    height: 100px;
+}
+.box-pasti p{
+    margin-top: 10px;
+}
+.box-pasti-icon{
+    
+    margin-top: 30px;
+    font-size: 20px;
+}
+.box-pasti-icon i{
+   margin-left: 10px; 
+   margin-right: 10px;
+   color: black;
+}
+.box1 p{
+    margin-top: 10px;
+}
+/* asos */
+</style>
+{% endblock %}
+    <link rel="stylesheet" href="ABOUT-US.css">
+ <script>
+    var swiper = new Swiper(".mySwiper", {
+    speed: 600,
+    parallax: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  </script>
+{% block content %}
+  <!-- Swiper -->
+ 
+    <div class="ABOUT-US">
+
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+            <div class="parallax-bg" style="
+                  background-image: url(home-img/minimalist-black-interior-with-black-sofa.jpg);
+                " data-swiper-parallax="-23%"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">Slide 1</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-100">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                    dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                    laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                    Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                    Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                    ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                    tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">Slide 2</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-100">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                    dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                    laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                    Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                    Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                    ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                    tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">Slide 3</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-100">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                    dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                    laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                    Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                    Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                    ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                    tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+         
+          
+        
+    </div>
+    <section class="about">
+        <div class="main">
+        <img src="{% static 'images/home-img/home8.jpg' %}">
+        <div class="about-text">
+        <h1>About</h1>
+        <h5><span>Alirizo</span></h5>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis mollitia dignissimos quidem aut vitae dolores molestias incidunt voluptatum explicabo, nam culpa modi harum doloremque nostrum eaque magni beatae ipsum quaerat?</p>
+        <button type="button">Let's Talk</button>
+        </div>
+        </div>
+            </section>
+ 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script src="script.js">
+   
+  </script>
+
+
+ {% endblock %}

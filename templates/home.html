@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    
+   
+{% block content %}
+    <!-- asosiy sahifa -->
+    <div class="bosh_sahifa">
+        <div class="bosh_sahifa_sozi">
+            <h1>PROJECT</h1>
+            <h2>Lorum</h2>
+            <a href="#"><button class="bosh_sahifa_button">View Project</button></a>
+        </div>
+        <img src="{% static 'images/asosiy.png'%}">
+    </div>
+    <!-- asosiy sahifa -->
+
+    <!-- about -->
+    <div class="about">
+        <div class="about_1">
+
+            <div class="about_rasm12">
+                <img src="{% static 'images/about_img_1.png'%}">
+                <br><br><br>
+                <img src="{% static 'images/about_img_2.png'%}">
+            </div>
+            <div class="about_rasm3">
+                <img src="{% static 'images/about_img_3.png'%}">
+            </div>
+        </div>
+        <h1 class="About">About</h1>
+        <div class="about_gap">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem similique, nesciunt reprehenderit
+                perferendis unde culpa ad minus numquam corrupti sint dolorum vitae? Id ut dolores in dolorum fugit a
+                tempore.</h2>
+            <br><br>
+            <a href="#"><button class="about_button">READ MORE</button></a>
+        </div>
+    </div>
+    <!-- about -->
+
+    <!-- Main -->
+    <div class="Main">
+        <h1>Main Focus/Mission Statement</h1>
+        <div class="Main-in">
+
+            <div class="Main-1">
+                <h1>1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, architecto minima. Architecto
+                    consequuntur tempora numquam soluta voluptate omnis.</p>
+            </div>
+
+            <div class="Main-1">
+                <h1>2</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, architecto minima. Architecto
+                    consequuntur tempora numquam soluta voluptate omnis.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- Main -->
+
+    <!-- Our Projects -->
+    <div class="Our-Projects">
+        <h1>Our Projects</h1>
+        <div class="Our-Projects-img">
+            <a href="#"><img src="{% static 'images/uy1.jpg'%}" alt=""></a>
+            <a href="#"><img src="{% static 'images/uy2.jpg'%}" alt=""></a>
+            <a href="#"><img src="{% static 'images/uy3.jpg'%}" alt=""></a>
+            <a href="#"><img src="{% static 'images/uy4.jpg'%}" alt=""></a>
+            <a href="#"><img src="{% static 'images/uy5.jpg'%}" alt=""></a>
+            <a href="#"><img src="{% static 'images/uy6.jpg'%}" alt=""></a>
+
+        </div>
+        <a href="#"><button>All Projects</button></a>
+    </div>
+    <!-- Our Projects -->
+
+    <!-- Contact Us -->
+    <div class="Contact" id="Contact">
+        <h1>Contact Us</h1>
+        <div class="Contact-Us">
+            <div class="Contact-form">
+                <form action="#" method="post">
+
+                    <label for="name">Ism familiya:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br><br><br>
+
+                    <label for="email">E-pochta:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <br><br><br>
+
+                    <button class="form-btn" type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="Contact-img">
+                <img src="{% static 'images/image12.png'%}">
+            </div>
+        </div>
+
+    </div>
+    <!-- Contact Us -->
+    
+{% endblock %}
